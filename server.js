@@ -1,5 +1,5 @@
 require('dotenv').config()
-const getters = require('./src/getters.js')
+const getters = require('./src/create/getters.js')
 
 var express = require('express');
 var app = express();
