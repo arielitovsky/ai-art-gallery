@@ -4,8 +4,6 @@ const getters = require('./src/create/getters.js')
 var express = require('express');
 var app = express();
 
-
-
 app.get('/', function (req, res) {
    res.send('Welcome to the AI art gallery');
 })
@@ -13,8 +11,9 @@ app.get('/', function (req, res) {
 
 app.get('/generate', getters.generateImage)
 
+const port = process.env.PORT || 8080
 
-var server = app.listen(8080, function () {
+var server = app.listen(port, function () {
    var host = server.address().address
    var port = server.address().port
    
