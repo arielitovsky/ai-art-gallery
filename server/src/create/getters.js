@@ -15,7 +15,7 @@ async function generateImage(req, res) {
   })
 
   res.setHeader('Content-Type', 'application/json');
-  res.end(JSON.stringify({ urrl: response.data.data[0].url }));
+  res.end(JSON.stringify({ url: response.data.data[0].url }));
 }
 
 module.exports = {generateImage}
