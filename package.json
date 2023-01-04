@@ -4,7 +4,7 @@
   "description": "A website that allows you to generate AI art and host it there",
   "main": "server.js",
   "scripts": {
-    "test": "test"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
